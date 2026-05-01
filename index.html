@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>GIMBO — Gym Management Platform</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=DM+Sans:wght@300;400;500;600&amp;family=DM+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+
+<link href="styles.css" rel="stylesheet"/></head>
+<body>
+<!-- NAV -->
+<nav>
+<div class="nav-logo">GIM<span>BO</span></div>
+<ul class="nav-links">
+<li><a href="#features">Features</a></li>
+<li><a href="#ai">AI Tools</a></li>
+<li><a href="#reports">Reports</a></li>
+<li><a href="#pricing">Pricing</a></li>
+<li><a href="#modules">Modules</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+<a href="tel:8006816950" id="nav-call-btn" style="
+    text-decoration:none;
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    background: linear-gradient(135deg, #d94f2b 0%, #b83e20 100%);
+    color: #fff;
+    padding: 9px 20px 9px 10px;
+    border-radius: 50px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    box-shadow: 0 0 0 0 rgba(217,79,43,0.5);
+    animation: nav-ring 2.2s ease-in-out infinite;
+    position:relative;
+    overflow:visible;
+  ">
+<span style="
+      width:30px; height:30px;
+      background: rgba(255,255,255,0.18);
+      border-radius:50%;
+      display:flex; align-items:center; justify-content:center;
+      flex-shrink:0;
+    ">
+<svg fill="white" height="14" viewbox="0 0 24 24" width="14"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"></path></svg>
+</span>
+<span style="line-height:1;">
+<span style="display:block; font-size:9px; font-weight:500; letter-spacing:1px; opacity:0.8; margin-bottom:1px;">TAP TO</span>
+      CALL NOW
+    </span>
+</a>
+
+</nav>
+<!-- HERO -->
+<div class="hero" style="position:relative; z-index:1;">
+<div class="hero-bg"></div>
+<p class="hero-eyebrow">Complete Gym Management Platform</p>
+<h1 class="hero-title">
+    Run Your<br/>
+<span class="accent">Gym Smarter.</span>
+<span class="line2">Not Harder.</span>
+</h1>
+<p class="hero-sub">
+    GIMBO gives gym owners a single command centre — real-time attendance, AI-generated diet &amp; workout plans, fee tracking, supplement sales, and more. All synced live to our RealTime Database.
+  </p>
+<div class="hero-actions">
+<a class="btn-primary" href="tel:8006816950" style="text-decoration:none; display:inline-flex; align-items:center; gap:8px;">
+<svg fill="currentColor" height="16" viewbox="0 0 24 24" width="16"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"></path></svg>
+      CALL NOW
+    </a>
+<a class="btn-ghost" href="https://www.youtube.com/@gimbogymsoftware" style="text-decoration:none; display:inline-flex; align-items:center; gap:8px;" target="_blank">
+<svg fill="currentColor" height="16" viewbox="0 0 24 24" width="16"><path d="M8 5v14l11-7z"></path></svg>
+      WATCH DEMO VIDEO
+    </a>
+<a href="https://wa.me/918006816950?text=Hi%20GIMBO!%20I%27d%20like%20to%20know%20more%20about%20your%20gym%20management%20software.%20Can%20you%20share%20further%20details%3F" onmouseout="this.style.background='#25D366';this.style.transform='translateY(0)'" onmouseover="this.style.background='#1ebc5a';this.style.transform='translateY(-1px)'" style="
+      text-decoration:none;
+      display:inline-flex;
+      align-items:center;
+      gap:9px;
+      background: #25D366;
+      color: #0a0a0a;
+      padding: 14px 28px;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      border-radius: var(--radius);
+      transition: background 0.2s, transform 0.1s;
+      border: none;
+    " target="_blank">
+<svg fill="currentColor" height="17" viewbox="0 0 24 24" width="17"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+      Contact for Details
+    </a>
+</div>
+<div class="hero-stats">
+<div class="hero-stat">
+<div class="hero-stat-num">13</div>
+<div class="hero-stat-label">Modules</div>
+</div>
+<div class="hero-stat">
+<div class="hero-stat-num">2</div>
+<div class="hero-stat-label">AI Engines</div>
+</div>
+<div class="hero-stat">
+<div class="hero-stat-num">∞</div>
+<div class="hero-stat-label">Live Sync</div>
+</div>
+<div class="hero-stat">
+<div class="hero-stat-num">0</div>
+<div class="hero-stat-label">Manual Work</div>
+</div>
+</div>
+</div>
+<!-- TICKER -->
+<div class="ticker-wrap" style="position:relative; z-index:1;">
+<div class="ticker">
+<span class="ticker-item">Members Dashboard</span>
+<span class="ticker-item"><span class="hi">Live Attendance</span></span>
+<span class="ticker-item">Fee Management</span>
+<span class="ticker-item"><span class="hi">AI Diet Plans</span></span>
+<span class="ticker-item">Exercise Charts</span>
+<span class="ticker-item"><span class="hi">Supplement Sales</span></span>
+<span class="ticker-item" style="display:inline-flex;align-items:center;gap:8px;">
+<svg fill="none" height="14" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><rect height="20" rx="5" stroke="#e0e0e0" stroke-width="2" width="20" x="2" y="2"></rect><circle cx="12" cy="12" r="5" stroke="#e0e0e0" stroke-width="2"></circle><circle cx="17.5" cy="6.5" fill="#e0e0e0" r="1.5"></circle></svg>
+<span class="hi">5 Influencer Reels</span>
+</span>
+<span class="ticker-item">Equipment Tracker</span>
+<span class="ticker-item"><span class="hi">Staff Payroll</span></span>
+<span class="ticker-item" style="display:inline-flex;align-items:center;gap:8px;">
+<svg fill="#e0e0e0" height="14" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95C18.05 21.45 22 17.19 22 12z"></path></svg>
+<span class="hi">Social Media Promotion</span>
+</span>
+<span class="ticker-item">Streak Tracking</span>
+<span class="ticker-item"><span class="hi" style="color:#2dbb6a;">🎁 3 Month Free Trial</span></span>
+<span class="ticker-item"><span class="hi">Reports &amp; Exports</span></span>
+<span class="ticker-item">Inside Gym Monitor</span>
+<span class="ticker-item"><span class="hi">Timing Heatmap</span></span>
+<!-- repeat for seamless loop -->
+<span class="ticker-item">Members Dashboard</span>
+<span class="ticker-item"><span class="hi">Live Attendance</span></span>
+<span class="ticker-item">Fee Management</span>
+<span class="ticker-item"><span class="hi">AI Diet Plans</span></span>
+<span class="ticker-item">Exercise Charts</span>
+<span class="ticker-item"><span class="hi">Supplement Sales</span></span>
+<span class="ticker-item" style="display:inline-flex;align-items:center;gap:8px;">
+<svg fill="none" height="14" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><rect height="20" rx="5" stroke="#e0e0e0" stroke-width="2" width="20" x="2" y="2"></rect><circle cx="12" cy="12" r="5" stroke="#e0e0e0" stroke-width="2"></circle><circle cx="17.5" cy="6.5" fill="#e0e0e0" r="1.5"></circle></svg>
+<span class="hi">5 Influencer Reels</span>
+</span>
+<span class="ticker-item">Equipment Tracker</span>
+<span class="ticker-item"><span class="hi">Staff Payroll</span></span>
+<span class="ticker-item" style="display:inline-flex;align-items:center;gap:8px;">
+<svg fill="#e0e0e0" height="14" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95C18.05 21.45 22 17.19 22 12z"></path></svg>
+<span class="hi">Social Media Promotion</span>
+</span>
+<span class="ticker-item">Streak Tracking</span>
+<span class="ticker-item"><span class="hi" style="color:#2dbb6a;">🎁 3 Month Free Trial</span></span>
+<span class="ticker-item"><span class="hi">Reports &amp; Exports</span></span>
+<span class="ticker-item">Inside Gym Monitor</span>
+<span class="ticker-item"><span class="hi">Timing Heatmap</span></span>
+</div>
+</div>
+<!-- FEATURES GRID -->
+<section id="features" style="z-index:1; position:relative;">
+<p class="section-label reveal">Core Features</p>
+<h2 class="section-title reveal">Everything a gym<br/>needs, built in.</h2>
+<p class="section-sub reveal">From day-one member onboarding to monthly financial reports — every tool lives in one place, synced in real time.</p>
+<div class="features-grid reveal">
+<div class="feature-card">
+<div class="feature-icon">
+<svg color="#e0e0e0" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 28 28"><circle cx="14" cy="9" r="5"></circle><path d="M4 24c0-5.5 4.5-8 10-8s10 2.5 10 8"></path></svg>
+</div>
+<div class="feature-name">Member Management</div>
+<div class="feature-desc">Add, edit, and search members with Power IDs. Track join date, package, contact, fitness goals, and active status — all in one view.</div>
+<span class="feature-tag tag-core">Core</span>
+</div>
+<div class="feature-card">
+<div class="feature-icon">
+<svg color="#2dbb6a" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 28 28"><rect height="18" rx="2" width="22" x="3" y="5"></rect><path d="M3 11h22M9 5v6M19 5v6"></path></svg>
+</div>
+<div class="feature-name">Live Attendance</div>
+<div class="feature-desc">Mark present / absent per day with a single tap. Time-stamped check-ins, fee status shown inline, date-picker to view any day's record.</div>
+<span class="feature-tag tag-live"><span class="live-dot" style="margin-right:4px;"></span> Live</span>
+</div>
+<div class="feature-card">
+<div class="feature-icon">
+<svg color="#2f80ed" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 28 28"><path d="M14 3v10l6 3"></path><circle cx="14" cy="14" r="11"></circle></svg>
+</div>
+<div class="feature-name">Attendance Streak</div>
+<div class="feature-desc">Consecutive days counted automatically for each member. Fire badge at 5+ days. Breaks tracked. Sundays excluded. Motivates members to stay consistent.</div>
+<span class="feature-tag tag-smart">Smart</span>
+</div>
+<div class="feature-card">
+<div class="feature-icon">
+<svg color="#e0e0e0" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 28 28"><rect height="20" rx="2" width="20" x="4" y="4"></rect><path d="M4 10h20M10 4v6M18 4v6"></path></svg>
+</div>
+<div class="feature-name">Fee Management</div>
+<div class="feature-desc">Auto-computes due dates from package duration. Paid / Overdue / Pending status updates automatically. One-click "Mark Paid" with amount &amp; date modal.</div>
+<span class="feature-tag tag-smart">Smart</span>
+</div>
+<div class="feature-card">
+<div class="feature-icon">
+<svg color="#d94f2b" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 28 28"><path d="M4 22 L14 6 L24 22 Z"></path><path d="M4 22h20"></path></svg>
+</div>
+<div class="feature-name">Supplement Sales</div>
+<div class="feature-desc">Record every supplement sale with auto-filled unit price from inventory. Monthly stats, range exports to Excel, real-time search and delete.</div>
+<span class="feature-tag tag-core">Core</span>
+</div>
+<div class="feature-card">
+<div class="feature-icon">
+<svg color="#2dbb6a" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 28 28"><rect height="16" width="6" x="4" y="8"></rect><rect height="20" width="6" x="11" y="4"></rect><rect height="12" width="6" x="18" y="12"></rect></svg>
+</div>
+<div class="feature-name">Reports &amp; Exports</div>
+<div class="feature-desc">Monthly &amp; custom-range XLSX exports for attendance, fees, supplement sales, and member data. Pivot-style summaries with totals rows built in.</div>
+<span class="feature-tag tag-core">Core</span>
+</div>
+<div class="feature-card">
+<div class="feature-icon">
+<svg color="#e0e0e0" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 28 28"><path d="M8 4h12v4H8zM6 8h16l-2 16H8L6 8z"></path><path d="M11 13v7M17 13v7"></path></svg>
+</div>
+<div class="feature-name">Supplement Inventory</div>
+<div class="feature-desc">Manage stock levels, brand, and price for every product. Real-time updates. Low-stock alerts configurable in settings.</div>
+<span class="feature-tag tag-core">Core</span>
+</div>
+<div class="feature-card">
+<div class="feature-icon">
+<svg color="#2f80ed" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 28 28"><rect height="16" rx="2" width="22" x="3" y="6"></rect><path d="M3 11h22M8 16h4M8 19h6"></path></svg>
+</div>
+<div class="feature-name">Equipment Tracker</div>
+<div class="feature-desc">Log gym equipment with name, type, quantity, and condition (Good / Fair / Poor). Edit &amp; delete with confirmation guard to prevent accidents.</div>
+<span class="feature-tag tag-core">Core</span>
+</div>
+<div class="feature-card">
+<div class="feature-icon">
+<svg color="#2dbb6a" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 28 28"><circle cx="10" cy="8" r="4"></circle><circle cx="20" cy="8" r="4"></circle><path d="M6 24c0-4 2-6 4-6s4 2 4 6M16 24c0-4 2-6 4-6s4 2 4 6"></path></svg>
+</div>
+<div class="feature-name">Staff &amp; Payroll</div>
+<div class="feature-desc">Add trainers and staff with role, salary, and phone. Toggle paid/unpaid status each month. Search by name or role instantly.</div>
+<span class="feature-tag tag-core">Core</span>
+</div>
+<div class="feature-card">
+<div class="feature-icon">
+<svg color="#9b59b6" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 28 28"><path d="M14 4a5 5 0 015 5v1a5 5 0 01-10 0V9a5 5 0 015-5z"></path><path d="M6 28c0-5 3-8 8-8s8 3 8 8"></path><path d="M20 10h4M22 8v4"></path></svg>
+</div>
+<div class="feature-name">Biometric Integration</div>
+<div class="feature-desc">Free integration with your biometric device for lightning-fast, touchless attendance marking. Members punch in — GIMBO logs it instantly with timestamp and session data.</div>
+<span class="feature-tag tag-smart">Smart</span>
+</div>
+<div class="feature-card">
+<div class="feature-icon">
+<svg color="#2dbb6a" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 28 28"><path d="M14 4c-4 0-7 2.5-7 6 0 2 1 3.5 2.5 4.5L8 18l4-1.5A8 8 0 0014 17c4 0 7-2.5 7-6s-3-7-7-7z"></path><path d="M10 11h8M10 14h5"></path></svg>
+</div>
+<div class="feature-name">SMS Alerts</div>
+<div class="feature-desc">Bulk SMS, automatic payment reminders, and custom sender IDs like "KDAGYM". Send fee due alerts, birthday wishes, and promotional messages to members in one click.</div>
+<span class="feature-tag tag-smart">Smart</span>
+</div>
+<div class="feature-card">
+<div class="feature-icon">
+<svg color="#2dbb6a" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 28 28"><path d="M5 8h18M5 14h18M5 20h10"></path><circle cx="21" cy="20" r="4"></circle><path d="M21 18v2l1 1"></path></svg>
+</div>
+<div class="feature-name">AI Diet Plan Generator</div>
+<div class="feature-desc">Enter a member's ID — age, weight, height, goal and dietary preferences auto-fill. AI generates a full meal plan with breakfast, lunch, dinner, snacks, calories and supplement timing in seconds.</div>
+<span class="feature-tag tag-ai">AI</span>
+</div>
+<div class="feature-card">
+<div class="feature-icon">
+<svg color="#2f80ed" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 28 28"><path d="M6 20c0-6 3-10 8-10s8 4 8 10"></path><path d="M10 10V6M18 10V6"></path><path d="M7 6h14"></path><path d="M12 14h4M12 17h4M12 20h4"></path></svg>
+</div>
+<div class="feature-name">AI Exercise Plan Generator</div>
+<div class="feature-desc">Generates personalised day-by-day workout splits based on member's goal (muscle gain / fat loss / strength). Full sets, reps, rest periods and progressions auto-created and saved to member profile.</div>
+<span class="feature-tag tag-ai">AI</span>
+</div>
+<div class="feature-card">
+<div class="feature-icon">
+<svg color="#f39c12" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 28 28"><path d="M4 20V10l10-6 10 6v10"></path><rect height="8" width="8" x="10" y="14"></rect><path d="M13 14v8"></path></svg>
+</div>
+<div class="feature-name">Finance Management</div>
+<div class="feature-desc">Track all income, expenses, dues, and collections in one clean financial dashboard. Monthly summaries, overdue tracking, and exportable reports keep your books always up to date.</div>
+<span class="feature-tag tag-core">Core</span>
+</div>
+<div class="feature-card">
+<div class="feature-icon">
+<svg color="#2f80ed" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 28 28"><rect height="22" rx="3" width="22" x="3" y="3"></rect><path d="M8 12h12M8 16h8"></path><circle cx="8" cy="8" fill="currentColor" r="1.5"></circle></svg>
+</div>
+<div class="feature-name">Owner Dashboard</div>
+<div class="feature-desc">Live revenue, active members, dues, and gym health metrics all on one screen. Real-time cloud sync means your numbers update the moment any transaction happens — from any device.</div>
+<span class="feature-tag tag-live"><span class="live-dot" style="margin-right:4px;"></span> Live</span>
+</div>
+<div class="feature-card">
+<div class="feature-icon">
+<svg color="#e0e0e0" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 28 28"><path d="M14 4L4 10v14h20V10L14 4z"></path><path d="M10 24V16h8v8"></path></svg>
+</div>
+<div class="feature-name">Birthday &amp; Expiry Alerts</div>
+<div class="feature-desc">Automatic birthday notifications for every member and package expiry warnings days in advance. Never miss a renewal opportunity or a chance to make a member feel valued.</div>
+<span class="feature-tag tag-smart">Smart</span>
+</div>
+<div class="feature-card">
+<div class="feature-icon">
+<svg color="#2dbb6a" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 28 28"><path d="M4 24V8l10-4 10 4v16"></path><rect height="10" width="4" x="9" y="14"></rect><rect height="14" width="4" x="15" y="10"></rect></svg>
+</div>
+<div class="feature-name">Bulk CSV / XLSX Import</div>
+<div class="feature-desc">Import hundreds of existing members in one shot via CSV or Excel file. Smart column mapping, duplicate detection, and error reporting make migration from any old system painless.</div>
+<span class="feature-tag tag-core">Core</span>
+</div>
+<div class="feature-card">
+<div class="feature-icon">
+<svg color="#2f80ed" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 28 28"><circle cx="14" cy="14" r="10"></circle><path d="M4 14h20M14 4c-3 4-3 16 0 20M14 4c3 4 3 16 0 20"></path></svg>
+</div>
+<div class="feature-name">Free Gym Website</div>
+<div class="feature-desc">Every plan includes a dedicated, professional website for your gym at no extra cost. Custom domain available on Pro. Showcases your gym, plans, and contact — zero coding needed.</div>
+<span class="feature-tag tag-core">Core</span>
+</div>
+<div class="feature-card" style="border-color:rgba(255,255,255,0.12); background:var(--surface); grid-column: 1 / -1;">
+<div style="display:flex; align-items:center; gap:12px; margin-bottom:16px;">
+<div style="display:flex; align-items:center; gap:8px; padding:8px 16px; background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.12); border-radius:6px;">
+<svg fill="none" height="18" viewbox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg">
+<rect height="20" rx="5" stroke="#e0e0e0" stroke-width="1.8" width="20" x="2" y="2"></rect>
+<circle cx="12" cy="12" r="5" stroke="#e0e0e0" stroke-width="1.8"></circle>
+<circle cx="17.5" cy="6.5" fill="#e0e0e0" r="1.5"></circle>
+</svg>
+<span style="font-size:12px; color:var(--gold); font-family:'DM Mono',monospace; letter-spacing:1px;">Instagram</span>
+</div>
+<div style="display:flex; align-items:center; gap:8px; padding:8px 16px; background:rgba(47,128,237,0.08); border:1px solid rgba(47,128,237,0.2); border-radius:6px;">
+<svg fill="#2f80ed" height="18" viewbox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg">
+<path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95C18.05 21.45 22 17.19 22 12z"></path>
+</svg>
+<span style="font-size:12px; color:#2f80ed; font-family:'DM Mono',monospace; letter-spacing:1px;">Facebook</span>
+</div>
+<span class="feature-tag tag-ai" style="margin-top:0;">Pro Plan</span>
+</div>
+<div class="feature-name">Influencer Reels Promotion</div>
+<div class="feature-desc" style="max-width:700px;">Boost your gym's social media presence with <strong style="color:var(--gold);">5 complimentary reels</strong> filmed by real fitness influencers — included with the Pro Plan. Each reel is tailored to your gym's brand, showcasing workouts, transformations, and energy that attracts new members. Posted directly to your Instagram &amp; Facebook page. No editing, no hassle — just high-impact content that works.</div>
+</div>
+</div>
+</section>
+<div class="divider"></div>
+<!-- INSIDE GYM FEATURE -->
+<div class="big-feature reveal">
+<div class="big-feature-content">
+<p class="section-label">Live Intelligence</p>
+<h2 class="section-title" style="font-size: clamp(36px,4vw,60px);">Know Who's Inside<br/>Right Now.</h2>
+<p style="font-size:16px; color:var(--text-dim); line-height:1.8; margin-bottom:24px;">
+      The "Inside Gym" counter tracks exactly how many members are currently in the building, based on check-in time and your gym's session windows. Click to see names, time remaining, and package info.
+    </p>
+<ul style="list-style:none; display:flex; flex-direction:column; gap:10px;">
+<li style="font-size:14px; color:var(--text-dim); display:flex; align-items:center; gap:10px;"><span style="color:var(--green); font-size:18px;">✓</span> Calculated from morning &amp; evening session times</li>
+<li style="font-size:14px; color:var(--text-dim); display:flex; align-items:center; gap:10px;"><span style="color:var(--green); font-size:18px;">✓</span> Shows minutes remaining for each member</li>
+<li style="font-size:14px; color:var(--text-dim); display:flex; align-items:center; gap:10px;"><span style="color:var(--green); font-size:18px;">✓</span> Auto-refreshes every 60 seconds</li>
+<li style="font-size:14px; color:var(--text-dim); display:flex; align-items:center; gap:10px;"><span style="color:var(--green); font-size:18px;">✓</span> Respects Sunday open/closed configuration</li>
+</ul>
+</div>
+<div class="big-feature-visual">
+<div style="display:flex; align-items:center; gap:10px; margin-bottom:16px;">
+<span class="live-dot"></span>
+<span style="font-size:11px; letter-spacing:2px; text-transform:uppercase; color:var(--text-muted); font-family:'DM Mono',monospace;">Live · Inside Gym</span>
+</div>
+<div class="inside-number" id="insideCount">7</div>
+<div class="inside-label">Members currently inside</div>
+<div class="session-row">
+<div class="session-block">
+<div class="session-val">6:00 – 9:00 AM</div>
+<div class="session-key">Morning Session</div>
+</div>
+<div class="session-block">
+<div class="session-val">5:00 – 9:00 PM</div>
+<div class="session-key">Evening Session</div>
+</div>
+</div>
+<div style="margin-top:20px; display:flex; flex-direction:column; gap:8px;">
+<div class="mock-row">
+<span class="mock-id">001</span>
+<span class="mock-name">Rahul Sharma</span>
+<span class="pill pill-green"><span class="pill-dot dot-green"></span> 42 min left</span>
+</div>
+<div class="mock-row">
+<span class="mock-id">004</span>
+<span class="mock-name">Priya Verma</span>
+<span class="pill pill-gold"><span class="pill-dot dot-gold"></span> 18 min left</span>
+</div>
+<div class="mock-row">
+<span class="mock-id">009</span>
+<span class="mock-name">Amit Rawat</span>
+<span class="pill pill-red"><span class="pill-dot dot-red"></span> 5 min left</span>
+</div>
+</div>
+</div>
+</div>
+<div class="divider"></div>
+<!-- STREAK FEATURE -->
+<div class="big-feature reverse reveal">
+<div class="big-feature-content">
+<p class="section-label">Member Engagement</p>
+<h2 class="section-title" style="font-size:clamp(36px,4vw,60px);">Streaks That Keep<br/>Members Coming Back.</h2>
+<p style="font-size:16px; color:var(--text-dim); line-height:1.8; margin-bottom:24px;">
+      Every member gets an automated attendance streak that counts consecutive workout days. A fire badge at 5+ days. Missed days break the streak instantly — creating real motivation to show up daily.
+    </p>
+<ul style="list-style:none; display:flex; flex-direction:column; gap:10px;">
+<li style="font-size:14px; color:var(--text-dim); display:flex; align-items:center; gap:10px;"><span style="color:var(--gold); font-size:18px;">✓</span> Sundays automatically skipped — no unfair breaks</li>
+<li style="font-size:14px; color:var(--text-dim); display:flex; align-items:center; gap:10px;"><span style="color:var(--gold); font-size:18px;">✓</span> "Broke N days ago" shown when member slips</li>
+<li style="font-size:14px; color:var(--text-dim); display:flex; align-items:center; gap:10px;"><span style="color:var(--gold); font-size:18px;">✓</span> Visual weekly attendance graph per member</li>
+<li style="font-size:14px; color:var(--text-dim); display:flex; align-items:center; gap:10px;"><span style="color:var(--gold); font-size:18px;">✓</span> Inactive detection for long-absent members</li>
+</ul>
+</div>
+<div class="big-feature-visual">
+<div style="font-size:11px; letter-spacing:2px; text-transform:uppercase; color:var(--text-muted); font-family:'DM Mono',monospace; margin-bottom:20px;">This Week's Streaks</div>
+<div style="display:flex; flex-direction:column; gap:12px;">
+<div>
+<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
+<span style="font-size:14px; font-weight:500;">Rahul Sharma</span>
+<span style="font-size:13px; background:rgba(255,255,255,0.07); color:var(--gold); padding:2px 10px; border-radius:20px;">🔥 6 Days</span>
+</div>
+<div class="streak-row">
+<div class="streak-dot s-on"></div><div class="streak-dot s-on"></div><div class="streak-dot s-on"></div><div class="streak-dot s-on"></div><div class="streak-dot s-on"></div><div class="streak-dot s-on"></div><div class="streak-dot s-off"></div>
+</div>
+</div>
+<div style="border-top:1px solid var(--border); padding-top:12px;">
+<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
+<span style="font-size:14px; font-weight:500;">Priya Verma</span>
+<span style="font-size:13px; background:rgba(45,187,106,0.12); color:var(--green); padding:2px 10px; border-radius:20px;">3 Days</span>
+</div>
+<div class="streak-row">
+<div class="streak-dot s-off"></div><div class="streak-dot s-off"></div><div class="streak-dot s-off"></div><div class="streak-dot s-on"></div><div class="streak-dot s-on"></div><div class="streak-dot s-on"></div><div class="streak-dot s-off"></div>
+</div>
+</div>
+<div style="border-top:1px solid var(--border); padding-top:12px;">
+<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
+<span style="font-size:14px; font-weight:500;">Vikram Singh</span>
+<span style="font-size:13px; background:rgba(255,255,255,0.05); color:var(--text-muted); padding:2px 10px; border-radius:20px;">Broke 2d ago</span>
+</div>
+<div class="streak-row">
+<div class="streak-dot s-on"></div><div class="streak-dot s-on"></div><div class="streak-dot s-on"></div><div class="streak-dot s-on"></div><div class="streak-dot s-off"></div><div class="streak-dot s-off"></div><div class="streak-dot s-off"></div>
+</div>
+</div>
+</div>
+<div style="margin-top:20px; padding:14px; background:var(--surface2); border-radius:var(--radius); border:1px solid var(--border);">
+<div style="font-size:11px; color:var(--text-muted); text-transform:uppercase; letter-spacing:2px; font-family:'DM Mono',monospace; margin-bottom:8px;">Progress Graph (6-week)</div>
+<div class="chart-bar-row" id="streakChart"></div>
+</div>
+</div>
+</div>
+<div class="divider"></div>
+<!-- TIMING HEATMAP — GRAPHICAL -->
+<section id="timing" style="z-index:1; position:relative;">
+<p class="section-label reveal">Peak Awareness</p>
+<h2 class="section-title reveal">When Is Your Gym<br/>Actually Busiest?</h2>
+<p class="section-sub reveal">GIMBO's timing heatmap analyses historical attendance data to show hourly traffic patterns across the week — so you can staff smarter, schedule classes better, and advise members on quiet slots.</p>
+<div class="reveal" style="margin-top:48px;">
+<!-- TOP STAT CARDS -->
+<div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:12px; margin-bottom:24px;">
+<div id="hm-peak-day" style="background:linear-gradient(135deg,rgba(217,79,43,0.18),rgba(217,79,43,0.06)); border:1px solid rgba(217,79,43,0.35); border-radius:12px; padding:18px 20px;">
+<div style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:rgba(217,79,43,0.9);font-family:'DM Mono',monospace;margin-bottom:6px;">🔥 Peak Day</div>
+<div style="font-family:'Bebas Neue',sans-serif;font-size:28px;letter-spacing:1px;color:#fff;">Saturday</div>
+<div style="font-size:12px;color:var(--text-muted);margin-top:2px;">Highest footfall</div>
+</div>
+<div style="background:linear-gradient(135deg,rgba(45,187,106,0.18),rgba(45,187,106,0.06)); border:1px solid rgba(45,187,106,0.35); border-radius:12px; padding:18px 20px;">
+<div style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:rgba(45,187,106,0.9);font-family:'DM Mono',monospace;margin-bottom:6px;">⚡ Rush Hour</div>
+<div style="font-family:'Bebas Neue',sans-serif;font-size:28px;letter-spacing:1px;color:#fff;">7–9 AM</div>
+<div style="font-size:12px;color:var(--text-muted);margin-top:2px;">Morning peak window</div>
+</div>
+<div style="background:linear-gradient(135deg,rgba(47,128,237,0.18),rgba(47,128,237,0.06)); border:1px solid rgba(47,128,237,0.35); border-radius:12px; padding:18px 20px;">
+<div style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:rgba(47,128,237,0.9);font-family:'DM Mono',monospace;margin-bottom:6px;">🧘 Quiet Slot</div>
+<div style="font-family:'Bebas Neue',sans-serif;font-size:28px;letter-spacing:1px;color:#fff;">11 AM–4 PM</div>
+<div style="font-size:12px;color:var(--text-muted);margin-top:2px;">Best for classes</div>
+</div>
+<div style="background:linear-gradient(135deg,rgba(224,224,224,0.1),rgba(224,224,224,0.03)); border:1px solid rgba(255,255,255,0.1); border-radius:12px; padding:18px 20px;">
+<div style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-family:'DM Mono',monospace;margin-bottom:6px;">📊 Avg Daily</div>
+<div style="font-family:'Bebas Neue',sans-serif;font-size:28px;letter-spacing:1px;color:#fff;">248</div>
+<div style="font-size:12px;color:var(--text-muted);margin-top:2px;">Members / day</div>
+</div>
+</div>
+<!-- MAIN HEATMAP CARD -->
+<div style="background:var(--surface); border:1px solid var(--border); border-radius:16px; padding:32px 32px 24px; overflow:hidden; position:relative;">
+<!-- header -->
+<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:28px; flex-wrap:wrap; gap:12px;">
+<div>
+<div style="font-family:'DM Mono',monospace; font-size:11px; letter-spacing:3px; text-transform:uppercase; color:var(--text-muted); margin-bottom:4px;">Weekly Occupancy Heatmap</div>
+<div style="font-size:13px; color:var(--text-dim);">Hover any day to see hourly breakdown</div>
+</div>
+<div style="display:flex; align-items:center; gap:8px; background:rgba(47,128,237,0.12); border:1px solid rgba(47,128,237,0.3); border-radius:20px; padding:6px 14px;">
+<span style="width:7px;height:7px;background:#2f80ed;border-radius:50%;display:inline-block;animation:pulse-green 1.5s ease-in-out infinite;"></span>
+<span style="font-size:12px; color:#2f80ed; font-family:'DM Mono',monospace; letter-spacing:1px;">Based on last 30 days</span>
+</div>
+</div>
+<!-- BAR CHART HEATMAP -->
+<div id="hm-bars" style="display:grid; grid-template-columns:repeat(7,1fr); gap:10px; align-items:end; position:relative;">
+<!-- filled by JS -->
+</div>
+<!-- TIME AXIS -->
+<div style="display:flex; justify-content:space-between; padding:10px 0 4px; border-top:1px solid var(--border); margin-top:20px;">
+<span style="font-size:10px;color:var(--text-muted);font-family:'DM Mono',monospace;">6 AM</span>
+<span style="font-size:10px;color:var(--text-muted);font-family:'DM Mono',monospace;">9 AM</span>
+<span style="font-size:10px;color:var(--text-muted);font-family:'DM Mono',monospace;">12 PM</span>
+<span style="font-size:10px;color:var(--text-muted);font-family:'DM Mono',monospace;">5 PM</span>
+<span style="font-size:10px;color:var(--text-muted);font-family:'DM Mono',monospace;">8 PM</span>
+</div>
+<!-- LEGEND -->
+<div style="display:flex; gap:20px; flex-wrap:wrap; margin-top:16px; padding-top:16px; border-top:1px solid var(--border);">
+<div style="display:flex;align-items:center;gap:8px;">
+<div style="width:28px;height:10px;border-radius:3px;background:rgba(45,187,106,0.18);"></div>
+<span style="font-size:11px;color:var(--text-muted);">Quiet</span>
+</div>
+<div style="display:flex;align-items:center;gap:8px;">
+<div style="width:28px;height:10px;border-radius:3px;background:rgba(45,187,106,0.45);"></div>
+<span style="font-size:11px;color:var(--text-muted);">Moderate</span>
+</div>
+<div style="display:flex;align-items:center;gap:8px;">
+<div style="width:28px;height:10px;border-radius:3px;background:#2dbb6a;"></div>
+<span style="font-size:11px;color:var(--text-muted);">Busy</span>
+</div>
+<div style="display:flex;align-items:center;gap:8px;">
+<div style="width:28px;height:10px;border-radius:3px;background:#d94f2b;"></div>
+<span style="font-size:11px;color:var(--text-muted);">Peak</span>
+</div>
+<div style="margin-left:auto; font-size:11px; color:var(--text-muted); font-family:'DM Mono',monospace;">↑ HEIGHT = FOOTFALL INTENSITY</div>
+</div>
+<!-- TOOLTIP -->
+<div id="hm-tooltip" style="
+        position:absolute; pointer-events:none; display:none;
+        background:#1a1a1a; border:1px solid rgba(255,255,255,0.12);
+        border-radius:10px; padding:14px 18px; min-width:180px;
+        box-shadow:0 8px 32px rgba(0,0,0,0.5); z-index:20;
+        backdrop-filter:blur(10px);
+      "></div>
+</div>
+</div>
+</section>
+
+
+<!-- AI SECTION -->
+<div class="ai-section" id="ai">
+<div class="ai-inner">
+<p class="section-label reveal">AI-Powered</p>
+<h2 class="section-title reveal">Personalised Plans.<br/>Generated Instantly.</h2>
+<p class="section-sub reveal">Two dedicated AI engines — one for diet, one for workouts — create fully personalised plans for each member in seconds. Plans are saved to their profile and accessible anytime.</p>
+<div class="ai-cards reveal">
+<div class="ai-card">
+<div class="ai-card-title">AI Diet Plan Generator</div>
+<div class="ai-card-desc">
+          Enter a member's ID — their age, weight, height, goal, and dietary preferences are auto-filled from their profile. The AI generates a complete meal plan with breakfast, mid-morning snack, lunch, afternoon snack, and dinner. Each meal lists ingredients, quantities, and calories. Supplement timing advice included.
+        </div>
+<div class="ai-fields">
+<span class="ai-field">Age &amp; Weight</span>
+<span class="ai-field">Goal (Muscle / Fat Loss / Maintain)</span>
+<span class="ai-field">Diet Type (Veg / Non-Veg)</span>
+<span class="ai-field">Activity Level</span>
+<span class="ai-field">Allergies</span>
+<span class="ai-field">Current Supplements</span>
+<span class="ai-field">Calorie Targets</span>
+</div>
+<div style="margin-top:20px; display:flex; flex-direction:column; gap:8px;">
+<div class="meal-row">
+<span class="meal-time">7:00–8:30 AM</span>
+<span class="meal-name">Oats + Banana + Egg Whites</span>
+<span class="meal-cal">480 kcal</span>
+</div>
+<div class="meal-row">
+<span class="meal-time">12:30–1:30 PM</span>
+<span class="meal-name">Brown Rice + Chicken + Salad</span>
+<span class="meal-cal">620 kcal</span>
+</div>
+<div class="meal-row">
+<span class="meal-time">7:30–8:30 PM</span>
+<span class="meal-name">Dal + Roti + Sabzi</span>
+<span class="meal-cal">510 kcal</span>
+</div>
+</div>
+<span class="feature-tag tag-ai" style="margin-top:20px; display:inline-block;">AI Generated</span>
+</div>
+<div class="ai-card">
+<div class="ai-card-title">AI Exercise Plan Generator</div>
+<div class="ai-card-desc">
+          GIMBO's second AI engine creates a weekly workout schedule tailored to the member's fitness goal, experience level, available days, and any injuries. Day-by-day breakdown with sets, reps, rest times, and progressive overload notes. Saves directly to the member's Firestore profile.
+        </div>
+<div class="ai-fields">
+<span class="ai-field">Goal (Muscle / Strength / Fat Loss / Endurance)</span>
+<span class="ai-field">Experience Level</span>
+<span class="ai-field">Days per Week</span>
+<span class="ai-field">Injuries / Limitations</span>
+<span class="ai-field">Equipment Access</span>
+<span class="ai-field">Preferred Split</span>
+</div>
+<div style="margin-top:20px; display:flex; flex-direction:column; gap:8px;">
+<div class="meal-row">
+<span class="meal-time">Day 1 — Mon</span>
+<span class="meal-name">Chest + Triceps</span>
+<span class="meal-cal">6 exercises</span>
+</div>
+<div class="meal-row">
+<span class="meal-time">Day 2 — Tue</span>
+<span class="meal-name">Back + Biceps</span>
+<span class="meal-cal">5 exercises</span>
+</div>
+<div class="meal-row">
+<span class="meal-time">Day 3 — Wed</span>
+<span class="meal-name">Legs + Core</span>
+<span class="meal-cal">7 exercises</span>
+</div>
+</div>
+<span class="feature-tag tag-ai" style="margin-top:20px; display:inline-block;">AI Generated</span>
+</div>
+</div>
+</div>
+</div>
+<!-- REPORTS -->
+<section id="reports" style="z-index:1; position:relative;">
+<p class="section-label reveal">Data &amp; Analytics</p>
+<h2 class="section-title reveal">Reports That Actually<br/>Tell You Something.</h2>
+<p class="section-sub reveal">Every module exports to Excel with one click. The owner dashboard shows a live snapshot of your business at a glance — revenue, active members, overdue fees, and today's attendance.</p>
+<div class="reports-grid reveal">
+<div class="report-card">
+<span class="feature-tag tag-live" style="margin-bottom:12px; display:inline-block;"><span class="live-dot" style="margin-right:4px;"></span> Dashboard</span>
+<div class="report-title">Owner Dashboard</div>
+<ul class="report-items">
+<li>Total active members</li>
+<li>Today's attendance count</li>
+<li>Monthly revenue (paid fees)</li>
+<li>Overdue &amp; pending members</li>
+<li>Supplement sales this month</li>
+<li>Who's inside right now</li>
+<li>Average session duration</li>
+</ul>
+</div>
+<div class="report-card">
+<span class="feature-tag tag-core" style="margin-bottom:12px; display:inline-block;">Export</span>
+<div class="report-title">Attendance Reports</div>
+<ul class="report-items">
+<li>Monthly full attendance sheet</li>
+<li>Custom date-range export</li>
+<li>Per-member attendance history</li>
+<li>Present / Absent breakdown</li>
+<li>Check-in timestamps included</li>
+<li>Package &amp; fee status columns</li>
+</ul>
+</div>
+<div class="report-card">
+<span class="feature-tag tag-core" style="margin-bottom:12px; display:inline-block;">Export</span>
+<div class="report-title">Fee Reports</div>
+<ul class="report-items">
+<li>Paid / Overdue / Pending list</li>
+<li>Monthly revenue total</li>
+<li>Outstanding amount summary</li>
+<li>Next due date per member</li>
+<li>Payment history log</li>
+</ul>
+</div>
+<div class="report-card">
+<span class="feature-tag tag-core" style="margin-bottom:12px; display:inline-block;">Export</span>
+<div class="report-title">Supplement Sales</div>
+<ul class="report-items">
+<li>Monthly sales total (₹)</li>
+<li>Items sold this month</li>
+<li>Per-product sales breakdown</li>
+<li>Date-range custom export</li>
+<li>Totals row auto-generated</li>
+</ul>
+</div>
+<div class="report-card">
+<span class="feature-tag tag-smart" style="margin-bottom:12px; display:inline-block;">Smart</span>
+<div class="report-title">Member Reports</div>
+<ul class="report-items">
+<li>Full member list export</li>
+<li>Bulk CSV/XLSX import</li>
+<li>Birthday alerts</li>
+<li>Package expiry warnings</li>
+<li>Member retention analytics</li>
+</ul>
+</div>
+<div class="report-card">
+<span class="feature-tag tag-smart" style="margin-bottom:12px; display:inline-block;">Smart</span>
+<div class="report-title">Settings &amp; Config</div>
+<ul class="report-items">
+<li>Gym name &amp; owner info</li>
+<li>Morning &amp; evening session times</li>
+<li>Sunday open / closed toggle</li>
+<li>Fee reminder notifications</li>
+<li>Stock alert configuration</li>
+<li>Live RealTime Database sync indicator</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- MODULES STRIP -->
+<div class="modules-strip" id="modules">
+<div class="modules-inner">
+<p class="section-label reveal">All 13 Modules</p>
+<h2 class="section-title reveal">One Platform.</h2>
+<div class="modules-row reveal">
+<div class="module-pill"><span class="module-num">01</span> Owner Dashboard</div>
+<div class="module-pill"><span class="module-num">02</span> Member Management</div>
+<div class="module-pill"><span class="module-num">03</span> Live Attendance</div>
+<div class="module-pill"><span class="module-num">04</span> Streak Tracker</div>
+<div class="module-pill"><span class="module-num">05</span> Fee Management</div>
+<div class="module-pill"><span class="module-num">06</span> Supplement Sales</div>
+<div class="module-pill"><span class="module-num">07</span> Supplement Inventory</div>
+<div class="module-pill"><span class="module-num">08</span> Equipment Tracker</div>
+<div class="module-pill"><span class="module-num">09</span> Staff &amp; Payroll</div>
+<div class="module-pill"><span class="module-num">10</span> AI Diet Plans</div>
+<div class="module-pill"><span class="module-num">11</span> AI Exercise Charts</div>
+<div class="module-pill"><span class="module-num">12</span> Reports &amp; Exports</div>
+<div class="module-pill"><span class="module-num">13</span> Settings &amp; Config</div>
+</div>
+</div>
+</div>
+<!-- PRICING -->
+<div class="pricing-section" id="pricing">
+<div class="pricing-inner">
+<div class="pricing-header-wrap">
+<p class="section-label reveal" style="text-align:center;">Pricing</p>
+<div class="reveal" style="display:flex;justify-content:center;margin-bottom:20px;">
+<span class="pricing-customize">✦ We Customise According To You</span>
+</div>
+<h2 class="section-title reveal" style="text-align:center;">Simple Plans.<br/>Zero Hidden Costs.</h2>
+<p class="reveal" style="font-size:16px;color:var(--text-muted);max-width:500px;margin:12px auto 0;text-align:center;">One-time 6-month plan. No monthly subscription model, no server cost, no surprises.</p>
+</div>
+<div class="pricing-grid reveal">
+<!-- PLAN 1: BASIC -->
+<div class="plan-card">
+<span class="plan-badge badge-basic">Basic Plan</span>
+<div class="plan-name">Starter</div>
+<div class="plan-tagline">Everything your gym needs to run smoothly.</div>
+<div class="plan-price-wrap">
+<span class="plan-currency">₹</span>
+<span class="plan-price">10,000</span>
+</div>
+<div class="plan-period">For 6 Months  ·  One-time payment</div>
+<div class="plan-divider"></div>
+<ul class="plan-feature-list">
+<li><span class="plan-check">✓</span> Member Management (profiles, plans, history)</li>
+<li><span class="plan-check">✓</span> Smart Digital Attendance (QR, Face Recognition &amp; Digital Register)</li>
+<li><span class="plan-check">✓</span> Fee Timings &amp; Fee Tracking</li>
+<li><span class="plan-check">✓</span> Fee Notification Automation</li>
+<li><span class="plan-check">✓</span> Member Records &amp; Phone Records</li>
+<li><span class="plan-check">✓</span> Staff Salary Records</li>
+<li><span class="plan-check">✓</span> Gym Equipment List</li>
+<li><span class="plan-check">✓</span> Statistical Reports</li>
+<li><span class="plan-check">✓</span> Excel &amp; PDF Exports</li>
+<li><span class="plan-check">✓</span> Finance Management Dashboard</li>
+<li><span class="plan-check">✓</span> Supplement Sales &amp; Inventory</li>
+<li><span class="plan-check">✓</span> 24/7 Bug Fix Support</li>
+</ul>
+<div class="addon-title">Add-On Classes — ₹2,000 each</div>
+<div class="addon-grid">
+<span class="addon-pill">🕺 Zumba <span class="addon-price">+₹2K</span></span>
+<span class="addon-pill">🥊 MMA Training <span class="addon-price">+₹2K</span></span>
+<span class="addon-pill">🏊 Swimming <span class="addon-price">+₹2K</span></span>
+<span class="addon-pill">🥋 Martial Arts <span class="addon-price">+₹2K</span></span>
+<span class="addon-pill">🧘 Yoga Class <span class="addon-price">+₹2K</span></span>
+</div>
+<p style="font-size:12px;color:var(--text-muted);margin-bottom:24px;">Each add-on includes full attendance tracking &amp; class management — same as the main gym module.</p>
+<button class="plan-cta plan-cta-basic" onclick="window.location='tel:8006816950'">Get Started →</button>
+</div>
+<!-- PLAN 2: PRO -->
+<div class="plan-card plan-pro">
+<span class="most-popular">Best Value</span>
+<span class="plan-badge badge-pro">Pro Plan</span>
+<div class="plan-name" style="color:var(--red);">Professional</div>
+<div class="plan-tagline">Everything in Starter + serious growth tools.</div>
+<div class="plan-price-wrap">
+<span class="plan-currency" style="color:var(--red);">₹</span>
+<span class="plan-price gold">13,000</span>
+</div>
+<div class="plan-period">For 6 Months  ·  One-time payment</div>
+<div class="plan-divider"></div>
+<!-- Reels badge -->
+<div class="plan-reel-badge">
+<svg fill="none" height="28" viewbox="0 0 24 24" width="28" xmlns="http://www.w3.org/2000/svg">
+<rect height="20" rx="5" stroke="#e0e0e0" stroke-width="1.5" width="20" x="2" y="2"></rect>
+<circle cx="12" cy="12" r="5" stroke="#e0e0e0" stroke-width="1.5"></circle>
+<circle cx="17.5" cy="6.5" fill="#e0e0e0" r="1.5"></circle>
+</svg>
+<div class="plan-reel-text">
+<strong>5 Complimentary Influencer Reels</strong><br/>
+            Real gym influencers. Posted to your Instagram &amp; Facebook page. One-time bundle included in plan.
+          </div>
+</div>
+<ul class="plan-feature-list">
+<li><span class="plan-check-gold">✓</span> <strong style="color:var(--white);">Everything in Starter Plan</strong></li>
+<li><span class="plan-check-gold">✓</span> Custom Domain (your own branded URL)</li>
+<li><span class="plan-check-gold">✓</span> Fully Customisable UI — built for your gym's brand</li>
+<li><span class="plan-check-gold">✓</span> AI Diet Plan Generator (per member, full meal plan)</li>
+<li><span class="plan-check-gold">✓</span> AI Exercise Chart Generator (day-by-day splits)</li>
+<li><span class="plan-check-gold">✓</span> Live Attendance Streak Tracker with fire badges</li>
+<li><span class="plan-check-gold">✓</span> Peak Hour Heatmap (weekly occupancy analytics)</li>
+<li><span class="plan-check-gold">✓</span> Inside-Gym Live Monitor (who's in right now)</li>
+<li><span class="plan-check-gold">✓</span> Owner Dashboard (live revenue, members, dues)</li>
+<li><span class="plan-check-gold">✓</span> RealTime Database Cloud Sync (any device, anywhere)</li>
+<li><span class="plan-check-gold">✓</span> Birthday Alerts &amp; Package Expiry Warnings</li>
+<li><span class="plan-check-gold">✓</span> Bulk CSV / XLSX Member Import</li>
+<li><span class="plan-check-gold">✓</span> Supplement Stock Alerts &amp; Inventory Control</li>
+<li><span class="plan-check-gold">✓</span> Social Media Marketing via Influencer Reels</li>
+<li><span class="plan-check-gold">✓</span> Priority 24/7 Support + Free Bug Fix for 6 months</li>
+</ul>
+<button class="plan-cta plan-cta-pro" onclick="window.location='tel:8006816950'">Get Pro Plan →</button>
+</div>
+</div>
+<!-- BENEFITS STRIP — HERO VERSION -->
+<div class="reveal" style="margin-top: 56px; padding-top: 48px; border-top: 1px solid var(--border);">
+<!-- FREE TRIAL HERO CARD -->
+<div style="
+        position: relative;
+        background: linear-gradient(135deg, rgba(45,187,106,0.15) 0%, rgba(45,187,106,0.05) 60%, transparent 100%);
+        border: 1.5px solid rgba(45,187,106,0.5);
+        border-radius: 16px;
+        padding: 36px 40px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 24px;
+        overflow: hidden;
+      ">
+<!-- glow blob -->
+<div style="position:absolute; top:-40px; left:-40px; width:200px; height:200px; background:radial-gradient(circle, rgba(45,187,106,0.25) 0%, transparent 70%); pointer-events:none;"></div>
+<div style="display:flex; align-items:center; gap:20px; flex:1; min-width:260px;">
+<div style="
+            width: 64px; height: 64px; flex-shrink:0;
+            background: rgba(45,187,106,0.18);
+            border: 1.5px solid rgba(45,187,106,0.45);
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 28px;
+          ">🎁</div>
+<div>
+<div style="
+              display: inline-flex; align-items:center; gap:6px;
+              background: rgba(45,187,106,0.2);
+              border: 1px solid rgba(45,187,106,0.4);
+              border-radius: 20px;
+              padding: 3px 12px;
+              font-size: 10px;
+              font-family: 'DM Mono', monospace;
+              letter-spacing: 2px;
+              color: #2dbb6a;
+              text-transform: uppercase;
+              margin-bottom: 8px;
+            ">
+<span style="width:6px;height:6px;background:#2dbb6a;border-radius:50%;display:inline-block;animation:pulse-green 1.5s ease-in-out infinite;"></span>
+              Limited Offer
+            </div>
+<div style="font-family:'Bebas Neue',sans-serif; font-size:clamp(26px,4vw,38px); letter-spacing:2px; color:#fff; line-height:1; margin-bottom:4px;">3 MONTH FREE TRIAL</div>
+<div style="font-size:14px; color:rgba(45,187,106,0.85); font-weight:500;">No credit card. No commitment. Full access from day one.</div>
+</div>
+</div>
+<a href="https://wa.me/918006816950?text=Hi%20GIMBO!%20I%20want%20to%20start%20my%203%20Month%20Free%20Trial.%20Please%20guide%20me." onmouseout="this.style.background='#2dbb6a';this.style.transform='translateY(0)'" onmouseover="this.style.background='#25a05a';this.style.transform='translateY(-2px)'" style="
+          background: #2dbb6a;
+          color: #0a0a0a;
+          text-decoration: none;
+          padding: 14px 32px;
+          border-radius: 6px;
+          font-size: 13px;
+          font-weight: 700;
+          letter-spacing: 1.5px;
+          text-transform: uppercase;
+          white-space: nowrap;
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          transition: background 0.2s, transform 0.15s;
+          flex-shrink: 0;
+        " target="_blank">
+<svg fill="currentColor" height="15" viewbox="0 0 24 24" width="15"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+          Get Started Today
+        </a>
+</div>
+<!-- OTHER BENEFITS ROW -->
+<div style="display:flex; flex-wrap:wrap; gap:12px; justify-content:center;">
+<div onmouseout="this.style.borderColor='';this.style.color=''" onmouseover="this.style.borderColor='rgba(255,255,255,0.25)';this.style.color='#f5f3ef'" style="
+          display:flex; align-items:center; gap:10px;
+          padding:12px 22px;
+          background:var(--surface2);
+          border:1px solid var(--border);
+          border-radius:40px;
+          font-size:13px;
+          color:var(--text-dim);
+          transition: border-color 0.2s, color 0.2s;
+        ">
+<span style="font-size:16px;">🚫</span> No Monthly Subscription
+        </div>
+<div onmouseout="this.style.borderColor='';this.style.color=''" onmouseover="this.style.borderColor='rgba(255,255,255,0.25)';this.style.color='#f5f3ef'" style="
+          display:flex; align-items:center; gap:10px;
+          padding:12px 22px;
+          background:var(--surface2);
+          border:1px solid var(--border);
+          border-radius:40px;
+          font-size:13px;
+          color:var(--text-dim);
+          transition: border-color 0.2s, color 0.2s;
+        ">
+<span style="font-size:16px;">🖥️</span> No Server Cost
+        </div>
+<div onmouseout="this.style.borderColor='';this.style.color=''" onmouseover="this.style.borderColor='rgba(255,255,255,0.25)';this.style.color='#f5f3ef'" style="
+          display:flex; align-items:center; gap:10px;
+          padding:12px 22px;
+          background:var(--surface2);
+          border:1px solid var(--border);
+          border-radius:40px;
+          font-size:13px;
+          color:var(--text-dim);
+          transition: border-color 0.2s, color 0.2s;
+        ">
+<span style="font-size:16px;">🐛</span> Free Bug Fix Support
+        </div>
+<div onmouseout="this.style.borderColor='';this.style.color=''" onmouseover="this.style.borderColor='rgba(255,255,255,0.25)';this.style.color='#f5f3ef'" style="
+          display:flex; align-items:center; gap:10px;
+          padding:12px 22px;
+          background:var(--surface2);
+          border:1px solid var(--border);
+          border-radius:40px;
+          font-size:13px;
+          color:var(--text-dim);
+          transition: border-color 0.2s, color 0.2s;
+        ">
+<span style="font-size:16px;">📞</span> 24 Hrs Available
+        </div>
+</div>
+</div>
+
+</div>
+</div>
+<!-- ABOUT -->
+<section id="about" style="z-index:1; position:relative;">
+<p class="section-label reveal">About Us</p>
+<h2 class="section-title reveal">What Is<br/>GIMBO?</h2>
+<p class="reveal" style="font-size:17px; color:var(--text-dim); line-height:1.85; max-width:680px; margin-top:16px;">
+    Gimbo is an all-in-one gym management platform built specifically for gym owners in India. We help you manage members, staff, payments, attendance, diet plans, and social media — all from one powerful dashboard. No technical knowledge needed. No servers to manage. Just results.
+  </p>
+</section>
+<div class="divider"></div>
+<!-- CONTACT -->
+<section id="contact" style="z-index:1; position:relative;">
+<p class="section-label reveal">Get In Touch</p>
+<h2 class="section-title reveal">Contact<br/>Us.</h2>
+<p class="reveal" style="font-size:17px; color:var(--text-dim); max-width:500px; line-height:1.7; margin-top:12px; margin-bottom:48px;">Have questions or want a live demo? Reach out — we respond fast.</p>
+<div class="reveal" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px,1fr)); gap:20px;">
+<div style="background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-lg); padding:28px 24px; display:flex; gap:16px; align-items:flex-start;">
+<div style="font-size:22px; flex-shrink:0; margin-top:2px;">📍</div>
+<div>
+<div style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:2px; color:var(--white); margin-bottom:8px;">Address</div>
+<div style="font-size:14px; color:var(--text-muted); line-height:1.8;">Defence Colony near Vidhansabha,<br/>Dehradun</div>
+</div>
+</div>
+<div style="background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-lg); padding:28px 24px; display:flex; gap:16px; align-items:flex-start;">
+<div style="font-size:22px; flex-shrink:0; margin-top:2px;">📞</div>
+<div>
+<div style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:2px; color:var(--white); margin-bottom:8px;">Phone</div>
+<a href="tel:8006816950" style="font-size:15px; color:var(--text-dim); text-decoration:none; font-weight:500;">+91 8006816950</a>
+</div>
+</div>
+<div style="background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-lg); padding:28px 24px; display:flex; gap:16px; align-items:flex-start;">
+<div style="font-size:22px; flex-shrink:0; margin-top:2px;">✉️</div>
+<div>
+<div style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:2px; color:var(--white); margin-bottom:8px;">Email</div>
+<a href="mailto:gimboservices@gmail.com" style="font-size:14px; color:var(--text-dim); text-decoration:none; font-weight:500; word-break:break-all;">gimboservices@gmail.com</a>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA BANNER -->
+<section style="text-align:center; padding:100px 48px; position:relative; z-index:1;">
+<p class="section-label reveal" style="text-align:center;">Get Started</p>
+<h2 class="section-title reveal" style="text-align:center; margin-bottom:20px;">Your Gym.<br/>Fully Managed.</h2>
+<p class="reveal" style="font-size:18px; color:var(--text-dim); max-width:500px; margin:0 auto 40px; line-height:1.7;">
+    GIMBO syncs everything to our RealTime Database — no installation, no servers, accessible from any device.
+  </p>
+<div class="reveal" style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
+<a class="btn-primary" href="tel:8006816950" style="text-decoration:none; display:inline-flex; align-items:center; gap:8px;">
+<svg fill="currentColor" height="16" viewbox="0 0 24 24" width="16"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"></path></svg>
+      Call Now
+    </a>
+<a class="btn-ghost" href="https://www.youtube.com/@gimbogymsoftware" style="text-decoration:none; display:inline-flex; align-items:center; gap:8px;" target="_blank">
+<svg fill="currentColor" height="16" viewbox="0 0 24 24" width="16"><path d="M8 5v14l11-7z"></path></svg>
+      Watch Demo Video
+    </a>
+<a href="https://wa.me/918006816950?text=Hi%20GIMBO!%20I%27d%20like%20to%20know%20more%20about%20your%20gym%20management%20software.%20Can%20you%20share%20further%20details%3F" onmouseout="this.style.background='#25D366';this.style.transform='translateY(0)'" onmouseover="this.style.background='#1ebc5a';this.style.transform='translateY(-1px)'" style="
+      text-decoration:none;
+      display:inline-flex;
+      align-items:center;
+      gap:9px;
+      background: #25D366;
+      color: #0a0a0a;
+      padding: 14px 28px;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      border-radius: var(--radius);
+      transition: background 0.2s, transform 0.1s;
+    " target="_blank">
+<svg fill="currentColor" height="17" viewbox="0 0 24 24" width="17"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+      Contact for Details
+    </a>
+</div>
+</section>
+<!-- FOOTER -->
+<footer>
+<div class="footer-logo">GIMBO</div>
+<div style="display:flex; gap:24px; flex-wrap:wrap; justify-content:center;">
+<a href="#features" onmouseout="this.style.color=''" onmouseover="this.style.color='#f5f3ef'" style="font-size:12px; color:var(--text-muted); text-decoration:none; transition:color 0.2s;">Features</a>
+<a href="#pricing" onmouseout="this.style.color=''" onmouseover="this.style.color='#f5f3ef'" style="font-size:12px; color:var(--text-muted); text-decoration:none; transition:color 0.2s;">Pricing</a>
+<a href="#about" onmouseout="this.style.color=''" onmouseover="this.style.color='#f5f3ef'" style="font-size:12px; color:var(--text-muted); text-decoration:none; transition:color 0.2s;">About Us</a>
+<a href="#contact" onmouseout="this.style.color=''" onmouseover="this.style.color='#f5f3ef'" style="font-size:12px; color:var(--text-muted); text-decoration:none; transition:color 0.2s;">Contact</a>
+<a href="tel:8006816950" onmouseout="this.style.color=''" onmouseover="this.style.color='#f5f3ef'" style="font-size:12px; color:var(--text-muted); text-decoration:none; transition:color 0.2s;">+91 8006816950</a>
+</div>
+<p class="footer-copy">© 2025 GIMBO Gym Management Platform. Defence Colony, Dehradun.</p>
+</footer>
+<!-- FLOATING WHATSAPP + FREE TRIAL WIDGET -->
+<div id="float-widget" style="position:fixed; bottom:28px; right:28px; z-index:9999; display:flex; flex-direction:column; align-items:flex-end; gap:12px;">
+<!-- FREE TRIAL POPUP CARD -->
+<div id="trial-popup" style="
+    background: linear-gradient(135deg, #0e1f14 0%, #0a1a10 100%);
+    border: 1.5px solid rgba(45,187,106,0.5);
+    border-radius: 16px;
+    padding: 16px 18px;
+    width: 240px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.6), 0 0 0 1px rgba(45,187,106,0.1);
+    animation: float-in 0.5s cubic-bezier(.175,.885,.32,1.275) forwards, float-bob 3s ease-in-out 0.5s infinite;
+    transform-origin: bottom right;
+    position: relative;
+  ">
+<!-- close -->
+<button onclick="document.getElementById('trial-popup').style.display='none'" style="
+      position:absolute; top:8px; right:10px;
+      background:none; border:none; color:rgba(255,255,255,0.3);
+      font-size:16px; cursor:pointer; line-height:1; padding:0;
+    ">×</button>
+<!-- gift icon row -->
+<div style="display:flex; align-items:center; gap:10px; margin-bottom:10px;">
+<div style="
+        width:36px; height:36px; flex-shrink:0;
+        background:rgba(45,187,106,0.15);
+        border:1px solid rgba(45,187,106,0.4);
+        border-radius:50%;
+        display:flex; align-items:center; justify-content:center;
+        font-size:18px;
+        animation: spin-gift 4s ease-in-out infinite;
+      ">🎁</div>
+<div>
+<div style="font-size:9px; letter-spacing:2px; text-transform:uppercase; color:rgba(45,187,106,0.8); font-family:'DM Mono',monospace; margin-bottom:2px;">Limited Offer</div>
+<div style="font-family:'Bebas Neue',sans-serif; font-size:20px; letter-spacing:1px; color:#fff; line-height:1;">3 MONTHS FREE</div>
+</div>
+</div>
+<div style="font-size:12px; color:rgba(255,255,255,0.55); line-height:1.5; margin-bottom:12px;">No credit card · Full access · Start today</div>
+<a href="https://wa.me/918006816950?text=Hi%20GIMBO!%20I%20want%20to%20claim%20my%203%20Month%20Free%20Trial.%20Please%20guide%20me." onmouseout="this.style.background='#25D366'" onmouseover="this.style.background='#1ebc5a'" style="
+      display:flex; align-items:center; justify-content:center; gap:8px;
+      background:#25D366; color:#0a0a0a;
+      text-decoration:none; border-radius:8px;
+      padding:9px 14px; width:100%; box-sizing:border-box;
+      font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;
+      transition: background 0.2s;
+    " target="_blank">
+<svg fill="currentColor" height="14" viewbox="0 0 24 24" width="14"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+      Claim Free Trial
+    </a>
+</div>
+<!-- WHATSAPP BUTTON -->
+<a href="https://wa.me/918006816950?text=Hi%20GIMBO!%20I%27m%20interested%20in%20a%20live%20demo%20of%20your%20gym%20management%20software.%20Please%20get%20in%20touch." id="whatsapp-float" onmouseout="this.style.transform='scale(1)'" onmouseover="this.style.transform='scale(1.1)'" style="
+    width:60px; height:60px;
+    background:#25D366; border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    box-shadow:0 4px 20px rgba(37,211,102,0.5);
+    transition:transform 0.2s, box-shadow 0.2s;
+    text-decoration:none; position:relative;
+    animation: wa-pulse 2.5s ease-in-out infinite;
+  " target="_blank">
+<svg fill="white" height="30" viewbox="0 0 24 24" width="30"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+<!-- green ring ping -->
+<span style="
+      position:absolute; inset:-4px; border-radius:50%;
+      border:2px solid rgba(37,211,102,0.4);
+      animation:wa-ring 2.5s ease-out infinite;
+      pointer-events:none;
+    "></span>
+</a>
+</div>
+
+
+<script src="script.js"></script></body>
+</html>
